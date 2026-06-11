@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/wow-skills-icon.svg" alt="wow-skills icon" width="320">
+</p>
+
 # wow-skills
 
 这是一个持续积累和验证 skill 的仓库，主要收纳软件开发、日常办公相关、可以重复使用的高质量技能包。
@@ -37,4 +41,3 @@
 - 先明确边界，再扩展功能
 - 先保留可追溯性，再追求便捷
 - 软件开发类 skill 和办公类 skill 都要能真正落地
-
