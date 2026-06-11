@@ -1,0 +1,6 @@
+interface:
+  display_name: "Reliable Code Systems"
+  short_description: "Architecture, verification, CI, and observability discipline"
+  default_prompt: "Use $reliable-code-systems to make this code change reliable, observable, and verifiable."
+policy:
+  allow_implicit_invocation: true
