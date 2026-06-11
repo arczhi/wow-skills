@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/wow-skills-logo.svg" alt="wow-skills logo" width="520">
+  <img src="assets/wow-skills-logo-card.svg" alt="wow-skills logo" width="560">
 </p>
 
 # wow-skills
