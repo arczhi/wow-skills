@@ -1,0 +1,6 @@
+interface:
+  display_name: "Good Partner"
+  short_description: "Protect attention while shaping and driving projects"
+  default_prompt: "Use $good-partner to clarify this project, drive it forward, and only interrupt me when my attention is truly needed."
+policy:
+  allow_implicit_invocation: true
