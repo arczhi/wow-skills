@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Reliable Code Systems</title>
+  <desc id="desc">A simple path from a visible symptom through its root cause to a verified fix.</desc>
+  <defs>
+    <linearGradient id="r-bg" x1="40" y1="20" x2="1160" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F9F8"/>
+      <stop offset="1" stop-color="#EEF4F1"/>
+    </linearGradient>
+    <radialGradient id="r-glow" cx="0" cy="0" r="1" gradientTransform="translate(1060 34) rotate(140) scale(330 240)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CEECDD"/>
+      <stop offset="1" stop-color="#CEECDD" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="r-shadow" x="20" y="16" width="1160" height="430" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#173B36" flood-opacity="0.09"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="460" rx="48" fill="url(#r-bg)"/>
+  <rect width="1200" height="460" rx="48" fill="url(#r-glow)"/>
+  <g filter="url(#r-shadow)">
+    <rect x="42" y="34" width="1116" height="382" rx="40" fill="#DCE6E2"/>
+    <rect x="50" y="42" width="1100" height="366" rx="33" fill="#FDFEFD"/>
+  </g>
+
+  <text x="84" y="112" fill="#14231F" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="39" font-weight="700" letter-spacing="-1.1">Reliable Code Systems</text>
+  <text x="86" y="146" fill="#687873" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="500">Fix the cause. Prove the change.</text>
+
+  <path d="M352 282H442" stroke="#BFD2CC" stroke-width="3" stroke-linecap="round"/>
+  <path d="M432 274L444 282L432 290" stroke="#6B968A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M758 282H848" stroke="#BFD2CC" stroke-width="3" stroke-linecap="round"/>
+  <path d="M838 274L850 282L838 290" stroke="#6B968A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g>
+    <rect x="82" y="200" width="270" height="162" rx="32" fill="#E8EFEC"/>
+    <rect x="89" y="207" width="256" height="148" rx="25" fill="#FCFDFC"/>
+    <circle cx="132" cy="250" r="22" fill="#F0E2DC"/>
+    <path d="M132 237V254" stroke="#A85A4B" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="132" cy="263" r="2.5" fill="#A85A4B"/>
+    <text x="174" y="258" fill="#26332F" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="1.5">SYMPTOM</text>
+    <path d="M121 321C147 295 168 333 194 307C220 281 242 322 270 292C287 274 302 281 316 270" stroke="#C8D4D0" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <rect x="444" y="184" width="314" height="194" rx="36" fill="#C9DFD8"/>
+    <rect x="451" y="191" width="300" height="180" rx="29" fill="#17342E"/>
+    <circle cx="512" cy="256" r="28" fill="#28554B"/>
+    <circle cx="512" cy="256" r="14" stroke="#B9E58D" stroke-width="3"/>
+    <circle cx="512" cy="256" r="4" fill="#B9E58D"/>
+    <text x="559" y="264" fill="#F2F8F5" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="700" letter-spacing="1.4">ROOT CAUSE</text>
+    <text x="512" y="324" fill="#BDD0CA" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="500">Change the right layer</text>
+  </g>
+
+  <g>
+    <rect x="850" y="200" width="270" height="162" rx="32" fill="#E3ECD9"/>
+    <rect x="857" y="207" width="256" height="148" rx="25" fill="#FCFDFC"/>
+    <circle cx="905" cy="250" r="22" fill="#E5F1D7"/>
+    <path d="M894 250L902 258L917 241" stroke="#587C33" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="947" y="258" fill="#26332F" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="1.2">VERIFIED FIX</text>
+    <rect x="891" y="304" width="188" height="8" rx="4" fill="#E3EAE6"/>
+    <rect x="891" y="304" width="156" height="8" rx="4" fill="#8FBD61"/>
+  </g>
+</svg>

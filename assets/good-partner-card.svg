@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Good Partner</title>
+  <desc id="desc">Good Partner turns many competing projects into one clear next step and interrupts only when needed.</desc>
+  <defs>
+    <linearGradient id="g-bg" x1="38" y1="24" x2="1162" y2="438" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9F8FC"/>
+      <stop offset="1" stop-color="#F0F6F3"/>
+    </linearGradient>
+    <radialGradient id="g-lilac" cx="0" cy="0" r="1" gradientTransform="translate(80 432) rotate(-38) scale(320 220)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E4DDF0"/>
+      <stop offset="1" stop-color="#E4DDF0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="g-shadow" x="20" y="16" width="1160" height="430" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#373549" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="460" rx="48" fill="url(#g-bg)"/>
+  <rect width="1200" height="460" rx="48" fill="url(#g-lilac)"/>
+  <g filter="url(#g-shadow)">
+    <rect x="42" y="34" width="1116" height="382" rx="40" fill="#E4E3EA"/>
+    <rect x="50" y="42" width="1100" height="366" rx="33" fill="#FEFDFE"/>
+  </g>
+
+  <text x="84" y="112" fill="#211F29" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="39" font-weight="700" letter-spacing="-1.1">Good Partner</text>
+  <text x="86" y="146" fill="#716D7A" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="500">Keeps work moving without stealing your attention.</text>
+
+  <path d="M360 282H440" stroke="#CEC9D8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M430 274L442 282L430 290" stroke="#9288A6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M760 282H840" stroke="#C7D7D1" stroke-width="3" stroke-linecap="round"/>
+  <path d="M830 274L842 282L830 290" stroke="#71978C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g>
+    <rect x="82" y="206" width="278" height="156" rx="32" fill="#E9E6EF"/>
+    <rect x="124" y="230" width="188" height="86" rx="22" fill="#FCFBFD" transform="rotate(-5 124 230)"/>
+    <rect x="110" y="243" width="202" height="90" rx="23" fill="#F7F5FA" transform="rotate(3 110 243)"/>
+    <rect x="102" y="254" width="216" height="92" rx="24" fill="#FFFFFF"/>
+    <circle cx="136" cy="283" r="8" fill="#B9A6D1"/>
+    <rect x="154" y="278" width="118" height="10" rx="5" fill="#D9D4E1"/>
+    <rect x="126" y="310" width="112" height="8" rx="4" fill="#E5E1EA"/>
+    <text x="205" y="382" text-anchor="middle" fill="#6C6577" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="1.4">MANY PROJECTS</text>
+  </g>
+
+  <g>
+    <rect x="442" y="184" width="318" height="194" rx="36" fill="#CCDFD9"/>
+    <rect x="449" y="191" width="304" height="180" rx="29" fill="#19352F"/>
+    <circle cx="514" cy="254" r="28" fill="#2A554C"/>
+    <path d="M503 255L511 263L526 245" stroke="#B9E58D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="558" y="250" fill="#F2F8F5" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700" letter-spacing="1.2">SHAPE + DRIVE</text>
+    <text x="558" y="278" fill="#BDD0CA" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="15">Quietly keeps track</text>
+    <rect x="500" y="317" width="202" height="30" rx="15" fill="#294D45"/>
+    <circle cx="520" cy="332" r="5" fill="#B9E58D"/>
+    <text x="535" y="337" fill="#E8F1ED" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="700">ONLY INTERRUPT WHEN NEEDED</text>
+  </g>
+
+  <g>
+    <rect x="842" y="206" width="278" height="156" rx="32" fill="#E2EDE8"/>
+    <rect x="849" y="213" width="264" height="142" rx="25" fill="#FCFDFC"/>
+    <rect x="879" y="241" width="82" height="26" rx="13" fill="#DDEDE5"/>
+    <text x="900" y="259" fill="#357368" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="800">NEXT</text>
+    <text x="879" y="307" fill="#26332F" font-family="Avenir Next, ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="700">ONE CLEAR STEP</text>
+    <path d="M1053 251L1070 268L1053 285" stroke="#77A496" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
