@@ -206,6 +206,33 @@ Good AI output leaves humans with:
 - Tests or evals that explain the intended behavior.
 - Logs and state records that make production failures diagnosable.
 
+## Schema Evolution & Extensibility
+
+Treat schema changes as architectural boundaries, not feature plumbing. A column is a long-lived commitment; a type value (`ext_type`, `role`, `asset_type`, `plan_type`, `relation_type`, `dimension`, `config_type`) is an extension point.
+
+Signs of a schema problem:
+
+- A core table grows with every feature; columns are used by only 1–2 releases.
+- Dimensions, lineage, assets, configs, or outputs are modeled as `*_tag_id`, `*_task_id`, `*_image_uri`, `*_config_object_path`, `*_video_*` columns.
+- The same fact has two representations (JSON path + asset id, old mode flag + new process kind, counter column + detail table).
+- Fields cannot be removed because nobody knows their owner or remaining readers.
+- New tables repeat the same wide-table pattern instead of providing a reusable shape.
+
+Rules:
+
+1. Classify new data first: shared state, feature extension, materials, assets, plans, relations, tag dimensions, configs, or large output.
+2. Default to generic typed tables: `*_ext(owner_type, owner_id, ext_type, version, payload)`, `*_materials(owner_type, owner_id, role, order_no)`, `*_assets(owner_type, owner_id, asset_type, role)`, `*_plans(owner_type, owner_id, plan_type, plan_index)`, `*_relations(from, to, relation_type)`, `*_entity_tags(entity, dimension, tag)`.
+3. Add a type value before adding a column or a one-off table.
+4. Keep only core state and hot filters as typed columns. Warn at ~70 columns on a core table, freeze at ~90, and cap additions per release (e.g., 3) unless reviewed.
+5. One concept has one representation. Do not keep both a JSON path and an asset id for the same fact.
+6. Version AI outputs and feature payloads: `{version, model, prompt_version, payload}`; structure changes bump version, not schema.
+7. Every column has an owner, status (active/deprecated), and removal plan; review quarterly.
+8. Migrations must include defaults, backfill, rollback, and verification; regenerate schema snapshots from `information_schema`.
+9. Add a CI schema gate: too many core-table additions, missing comments/defaults, or generic tables without type keys/unique keys fail.
+10. When reviewing a design, ask: “If the next three features use this table, which column will be deprecated first?” If the answer is likely, redesign now.
+
+Read `references/schema-evolution.md` for the decision tree, generic table patterns, migration review questions, CI gate, and an anonymized case study (6 → 13 tables, core task table 47 → 86 columns; 13 of 15 iterations added columns directly).
+
 ## Review Checklist
 
 Before final response or PR handoff, verify:
